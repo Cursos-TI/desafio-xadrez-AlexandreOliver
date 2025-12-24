@@ -14,6 +14,7 @@ int main() {
     printf("| (1) - Bispo                                      |\n");
     printf("| (2) - Torre                                      |\n");
     printf("| (3) - Rainha                                     |\n");
+    printf("| (4) - Cavalo                                     |\n");
     printf("|---> ");
     scanf(" %c", &opcao);
 
@@ -47,6 +48,21 @@ int main() {
                 c++;
             } while ( c < MOV+3 );
 
+            break;
+
+        case '4':
+            printf("|================> Movendo Cavalo <================|\n");
+            
+            for (short i = 0; i < 3; i++) {
+                while (i < 2)
+                {
+                    printf("|  Mov #%hd - Baixo                                  |\n", i+1);
+                    i++;
+                }
+
+                printf("|  Mov #%hd - Esquerda                               |\n", i+1);
+                
+            }
             break;
         
         default:
